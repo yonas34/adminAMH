@@ -9,7 +9,7 @@ expressApp.use('/static', express.static(path.resolve(__dirname, 'client/static'
 
 payload.init({
   secret: 'SECRET_KEY',
-  mongoURL: process.env.MONGO_URL || 'mongodb://localhost/payload',
+  mongoURL: process.env.MONGO_URL || 'mongodb+srv://yonas:Kebu1357%40Degu@cluster0.gi5wd5g.mongodb.net/?retryWrites=true&w=majority',
   express: expressApp,
   email: {
     fromName: 'Payload',
