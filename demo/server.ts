@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+﻿/* eslint-disable no-console */
 import express from 'express';
 import path from 'path';
 import payload from '../src';
@@ -34,7 +34,7 @@ externalRouter.get('/', (req, res) => {
 
 expressApp.use('/external-route', externalRouter);
 
-expressApp.listen(3000, async () => {
+expressApp.listen(3000, "172.16.15.81", async () => {
   payload.logger.info(`Admin URL on ${payload.getAdminURL()}`);
   payload.logger.info(`API URL on ${payload.getAPIURL()}`);
 });

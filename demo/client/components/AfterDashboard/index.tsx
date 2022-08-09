@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useConfig } from '../../../../src/admin/components/utilities/Config';
 
@@ -26,6 +26,12 @@ const AfterDashboard: React.FC = () => {
             title="Default Template"
             onClick={() => history.push(`${adminRoute}/custom-default-route`)}
           />
+        </li>
+        <li>
+            <Card
+                title="Amharabank Website"
+                onClick={() => history.push(`amharabank.com.et`)}
+            />
         </li>
         <li>
           <Card

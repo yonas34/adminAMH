@@ -1,4 +1,4 @@
-import path from 'path';
+﻿import path from 'path';
 import { buildConfig } from '../src/config/build';
 
 import Admin from './collections/Admin';
@@ -40,26 +40,34 @@ import CustomRouteWithDefaultTemplate from './client/components/views/CustomDefa
 import AfterDashboard from './client/components/AfterDashboard';
 import AfterNavLinks from './client/components/AfterNavLinks';
 import BeforeLogin from './client/components/BeforeLogin';
-// import CustomProvider from './client/components/CustomProvider';
-
+import Coursle from './collections/Coursle'
+import CustomProvider from './client/components/CustomProvider';
+import Counter from './collections/Counter';
+import Product from './collections/ProductService';
+import HeadingLines from './collections/HeadingLines';
+import Currency_type from './collections/Currency_type';
+import Currency from './collections/Currency';
+import MT from './collections/MoneyTransfer';
+import LatestNews from './collections/LatestNews';
 export default buildConfig({
   cookiePrefix: 'payload',
-  serverURL: 'http://localhost:3000',
+  serverURL: 'http://172.16.15.81:3000',
+  cors:'*',
   typescript: {
     outputFile: path.resolve(__dirname, './payload-types.ts'),
   },
   admin: {
     user: 'admins',
     indexHTML: path.resolve(__dirname, './client/index.html'),
-    // meta: {
-    //   titleSuffix: '- Payload Demo',
-    //   // ogImage: '/static/find-image-here.jpg',
-    //   // favicon: '/img/whatever.png',
-    // },
-    // disable: true,
+     meta: {
+      titleSuffix: 'Amhara bank CMS Portal',
+      ogImage: 'http://172.16.15.81:3000/media/img5-1-1024x431.jpg',
+      favicon: 'http://172.16.15.81:3000/media/img5-1-16x16.jpg',
+     },
+  // disable: true,
     scss: path.resolve(__dirname, './client/scss/overrides.scss'),
     components: {
-      // providers: [CustomProvider, CustomProvider],
+ providers: [CustomProvider, CustomProvider],
       routes: [
         {
           path: '/custom-minimal-route',
@@ -90,36 +98,44 @@ export default buildConfig({
     webpack: (config) => config,
   },
   collections: [
-    Admin,
-    AllFields,
-    AutoLabel,
-    Autosave,
-    Blocks,
-    Code,
-    Conditions,
+     Admin,
+    // AllFields,
+    // AutoLabel,
+    // Autosave,
+    // Blocks,
+    // Code,
+    // Conditions,
     // CustomComponents,
-    CustomID,
-    DefaultValues,
-    File,
-    Geolocation,
-    HiddenFields,
-    Hooks,
+      Coursle,
+      Counter,
+      Product,
+      HeadingLines,
+      Currency_type,
+      Currency,
+      MT,
+      LatestNews,
+    // CustomID,
+    // DefaultValues,
+    // File,
+    // Geolocation,
+    // HiddenFields,
+    // Hooks,
     Localized,
     LocalizedArray,
     LocalOperations,
     Media,
-    Images,
-    NestedArrays,
-    Preview,
+    // Images,
+    // NestedArrays,
+    // Preview,
     PublicUsers,
-    RelationshipA,
-    RelationshipB,
-    RichText,
-    Select,
-    StrictAccess,
-    Validations,
-    Uniques,
-    UnstoredMedia,
+    // RelationshipA,
+    // RelationshipB,
+    // RichText,
+    // Select,
+    // StrictAccess,
+    // Validations,
+    // Uniques,
+    // UnstoredMedia,
   ],
   globals: [
     BlocksGlobal,

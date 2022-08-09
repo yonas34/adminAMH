@@ -4,4 +4,5 @@ export default [
   'moderator',
   'user',
   'viewer',
+  'marketing'
 ];

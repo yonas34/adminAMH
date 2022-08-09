@@ -1,4 +1,4 @@
-import { CollectionConfig } from '../../src/collections/config/types';
+﻿import { CollectionConfig } from '../../src/collections/config/types';
 import roles from '../access/roles';
 import checkRole from '../access/checkRole';
 

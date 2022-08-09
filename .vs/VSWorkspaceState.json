@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\demo",
+    "\\demo\\collections",
+    "\\demo\\collections\\CustomComponents",
+    "\\demo\\collections\\CustomComponents\\components",
+    "\\demo\\collections\\CustomComponents\\components\\views\\List",
+    "\\demo\\customComponents",
+    "\\demo\\customComponents\\CollectionDescription",
+    "\\demo\\customComponents\\Description",
+    "\\demo\\customComponents\\views"
+  ],
+  "SelectedNode": "\\demo\\collections\\Conditions.ts",
+  "PreviewInSolutionExplorer": false
+}

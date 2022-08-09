@@ -1,4 +1,4 @@
-import { Block } from '../../src/fields/config/types';
+﻿import { Block } from '../../src/fields/config/types';
 
 const Quote: Block = {
   imageURL: '/static/assets/images/generic-block-image.svg',
